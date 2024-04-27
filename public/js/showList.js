@@ -8,7 +8,7 @@ function showList() {
       dataType: "json",
       success: function (data) {
         if (data.length === 0) {
-          $('#serverList .loading').hide();
+          $('#listLoading').hide();
           $('#serverList').append('服务器列表数据为空或格式错误！');
           return;
         }
@@ -32,12 +32,12 @@ function showList() {
               </div>
           </a>
           `;
-          $('#serverList .loading').hide();
+          $('#listLoading').hide();
           $('#serverList').append(html);
         });
       },
       error: function () {
-        $('#serverList .loading').hide();
+        $('#listLoading').hide();
         $('#serverList').append('服务器列表数据格式错误！');
       }
     });

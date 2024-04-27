@@ -6,9 +6,53 @@ if (!defined('FRAMEWORK_CORE')) {
 require_once FRAMEWORK_APP_PATH . '/View/common/head.php'
 ?>
 
-<section id="serverList" class="ui centered link cards">
-    <div class="loading">获取中，很快就好……</div>
-</section>
+<div id="listLoading">
+    <div class="ui three column stackable grid">
+        <div class="column">
+            <div class="ui raised segment">
+                <div class="ui placeholder">
+                    <div class="image header">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="paragraph">
+                        <div class="medium line"></div>
+                        <div class="short line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui raised segment">
+                <div class="ui placeholder">
+                    <div class="image header">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="paragraph">
+                        <div class="medium line"></div>
+                        <div class="short line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui raised segment">
+                <div class="ui placeholder">
+                    <div class="image header">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="paragraph">
+                        <div class="medium line"></div>
+                        <div class="short line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="serverList" class="ui centered link cards"></section>
 
 <?php
 require_once FRAMEWORK_APP_PATH . '/View/common/footer.php'

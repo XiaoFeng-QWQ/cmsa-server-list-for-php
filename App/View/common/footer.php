@@ -6,6 +6,7 @@ if (!defined('FRAMEWORK_CORE')) {
 
 </main>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
 <script src="/public/js/pjax.js"></script>
 <footer class="ui inverted cuberite-theme cuberite-navigation footer segment">
     <div class="ui center aligned container">
