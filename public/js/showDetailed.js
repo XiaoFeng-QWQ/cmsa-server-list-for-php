@@ -47,7 +47,7 @@ function showDetailed() {
                     </aside>
                 </header>
             </article>
-            <article id="details" class="ui cuberite-expanded-plugin raised padded  segment" style="overflow-x: auto">解析文件中……</article>
+            <article id="details" class="ui cuberite-expanded-plugin raised padded  segment" style="overflow-x: auto">解析详情文件中……</article>
           `;
             $('#detailsContent .loading').hide();
 

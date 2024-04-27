@@ -7,7 +7,7 @@ require_once FRAMEWORK_APP_PATH . '/View/common/head.php'
 ?>
 
 <div id="detailsContent">
-    <div class="loading">获取中……</div>
+    <div class="loading">获取中，很快就好……</div>
 </div>
 
 <?php

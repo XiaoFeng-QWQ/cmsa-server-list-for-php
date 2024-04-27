@@ -7,7 +7,7 @@ require_once FRAMEWORK_APP_PATH . '/View/common/head.php'
 ?>
 
 <section id="serverList" class="ui centered link cards">
-    <div class="loading">获取中……</div>
+    <div class="loading">获取中，很快就好……</div>
 </section>
 
 <?php
