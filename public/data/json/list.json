@@ -1,0 +1,20 @@
+{
+    "1": {
+        "tag": "多世界多玩法",
+        "name": "dfgg",
+        "link": "https://www.dfggmc.top",
+        "authr": "dfgg工作室",
+        "master": "peg195",
+        "version": "Java1.12.2",
+        "description": "多世界多玩法服务器开创者"
+    },
+    "2": {
+        "tag": "MTR, 生存, 建筑, 休闲, 微生电",
+        "name": "baketo",
+        "link": "https://baketo.framer.ai/",
+        "authr": "CoH2",
+        "master": "CoH2",
+        "version": "Java1.19.2",
+        "description": "我们没有高配的CPU, 但是有满怀爱心的玩家!"
+    }
+}
