@@ -11,8 +11,9 @@ if (!defined('FRAMEWORK_CORE')) {
 <footer class="ui inverted cuberite-theme cuberite-navigation footer segment">
     <div class="ui center aligned container">
         <div class="ui inverted horizontal link list">
-            <a class="item" href="https://cmsa.dfggmc.top">Cuberite Minecraft服务器联盟</a>
-            <a class="item" href="https://wiki.cuberite.dfggmc.top">Cuberite中文维基</a>
+            <a class="item" target="_blank" href="https://cmsa.dfggmc.top">Cuberite Minecraft服务器联盟</a>
+            <a class="item" target="_blank" href="https://wiki.cuberite.dfggmc.top">Cuberite中文维基</a>
+            <a class="item" href="https://github.com/XiaoFeng-QWQ/cmsa-server-list-for-php">Cmsa Server List For PHP Powered By XiaoFeng-QWQ</a>
         </div>
     </div>
 </footer>
