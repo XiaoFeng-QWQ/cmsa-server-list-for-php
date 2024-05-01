@@ -13,7 +13,7 @@ if (!defined('FRAMEWORK_CORE')) {
         <div class="ui inverted horizontal link list">
             <a class="item" target="_blank" href="https://cmsa.dfggmc.top">Cuberite Minecraft服务器联盟</a>
             <a class="item" target="_blank" href="https://wiki.cuberite.dfggmc.top">Cuberite中文维基</a>
-            <a class="item" href="https://github.com/XiaoFeng-QWQ/cmsa-server-list-for-php">Cmsa Server List For PHP Powered By XiaoFeng-QWQ</a>
+            <a class="item" target="_blank" href="https://github.com/XiaoFeng-QWQ/cmsa-server-list-for-php">Cmsa Server List For PHP Powered By XiaoFeng-QWQ</a>
         </div>
     </div>
 </footer>

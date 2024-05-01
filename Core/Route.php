@@ -8,6 +8,13 @@ if (!defined('FRAMEWORK_CORE')) {
 
 use Framework\Config\App;
 
+/**
+ * Cmsa Server List For PHP - 路由类
+ * 
+ * @copyright 2024 XiaoFeng-QWQ
+ * @author XiaoFeng-QWQ <1432777209@qq.com>
+ * @link https://github.com/XiaoFeng-QWQ/cmsa-server-list-for-php
+ */
 class Route
 {
     private array $route_rules;
@@ -64,6 +71,6 @@ class Route
     private function handleNotFound()
     {
         header("HTTP/1.1 404 Not Found");
-        exit('<h3>错误：</h3><blockquote>访问的URL: ' . $this->currentUri . ' 不存在！</blockquote>');
+        exit('<h3>错误：</h3><blockquote>访问的URL: ' . $this->currentUri . ' 不存在！ Powered By XiaoFeng-QWQ</blockquote>');
     }
 }
