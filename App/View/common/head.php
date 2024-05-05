@@ -67,6 +67,9 @@ if (!defined('FRAMEWORK_CORE')) {
                 <img src="/public/img/logo.png" style="margin-right: 1.5em" alt="Logo" class="logo" />
                 <p>Cuberite Minecraft服务器联盟-服务器列表</p>
             </a>
+            <button class="ui left floated button" mdui-dialog="{target: '#music-player-settings'}">
+                打开音乐播放器设置
+            </button>
         </div>
     </nav>
 
