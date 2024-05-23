@@ -12,14 +12,14 @@ define('FRAMEWORK_CORE', true);
 define('FRAMEWORK_DEBUG', -1);
 
 /**
- * 当前程序目录
+ * 当前程序根目录
  * 
  * @var string
  */
 define('FRAMEWORK_DIR', dirname(dirname(__FILE__)));
 
 /**
- * 定义版本
+ * 定义框架版本
  * 
  * @var int
  */

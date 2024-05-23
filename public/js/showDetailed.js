@@ -2,17 +2,19 @@
  * 展示详情页
  */
 function showDetailed() {
-  if ($('#detailsContent').length > 0) {
-    var pathName = window.location.pathname;
-    var serverName = pathName.split("/")[1];
+  const detailsContent = $('#detailsContent');
+
+  if (detailsContent.length > 0) {
+    const pathName = window.location.pathname;
+    const serverName = decodeURI(pathName.split("/")[1]);
 
     $.getJSON("/public/data/json/list.json")
       .done(function (data) {
-        var serverFound = false;
+        let serverFound = false;
 
         $.each(data, function (key, item) {
           if (item.name === serverName) {
-            var html = `
+            const html = `
             <article class="ui cuberite-expanded-plugin two column stackable grid">
                 <header class="row">
                     <div class="twelve wide column">
@@ -50,11 +52,11 @@ function showDetailed() {
             <article id="details" class="ui cuberite-expanded-plugin raised padded  segment" style="overflow-x: auto">
                 <div class="ui active inline loader"></div>
             </article>
-          `;
+            `;
+            detailsContent.html(html);
             $('#detailsContent .loading').hide();
 
-            $('#detailsContent').html(html);
-
+            // 获取详情MD文件
             $.ajax({
               url: `/public/data/mark-down/details/${key}.md`,
               success: function (markdownText) {
@@ -72,12 +74,12 @@ function showDetailed() {
 
         if (!serverFound) {
           $('#detailsContent .loading').hide();
-          $('#content').html('未找到服务器信息！');
+          detailsContent.html('未找到服务器信息！');
         }
       })
       .fail(function () {
         $('#detailsContent .loading').hide();
-        $('#content').html('无法获取服务器列表数据！');
+        detailsContent.html('无法获取服务器列表数据！');
       });
   }
 }

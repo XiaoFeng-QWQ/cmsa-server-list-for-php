@@ -1,20 +1,58 @@
 {
-    "1": {
-        "tag": "多世界多玩法",
-        "name": "dfgg",
-        "link": "https://www.dfggmc.top",
-        "authr": "dfgg工作室",
-        "master": "peg195",
-        "version": "Java1.12.2",
-        "description": "多世界多玩法服务器开创者"
+  "1": {
+    "tag": "多世界, 多玩法",
+    "name": "花风服务器",
+    "link": "https://www.dfggmc.top",
+    "authr": "dfgg工作室",
+    "master": "peg195",
+    "version": "Java1.12.2",
+    "serverIp": {
+      "ip": "play.dfggmc.eu.org",
+      "port": 25565
     },
-    "2": {
-        "tag": "MTR, 生存, 建筑, 休闲, 微生电",
-        "name": "baketo",
-        "link": "https://baketo.framer.ai/",
-        "authr": "CoH2",
-        "master": "CoH2",
-        "version": "Java1.19.2",
-        "description": "我们没有高配的CPU, 但是有满怀爱心的玩家!"
-    }
+    "description": "来这里，创造属于你的故事！",
+    "serverState": true
+  },
+  "2": {
+    "tag": "生存，养老，种田",
+    "name": "Arcturn服务器",
+    "link": "https://baketo.framer.ai/",
+    "authr": "CoH2",
+    "master": "CoH2",
+    "version": "Java1.7.x-1.20.6",
+    "serverIp": {
+      "ip": "k.rainplay.cn",
+      "port": 59367
+    },
+    "description": "主要玩法: 生存，养老，种田 官网正在重构中",
+    "serverState": true
+  },
+  "3": {
+    "tag": "全员OP",
+    "name": "OPCraft服务器",
+    "link": "https://qm.qq.com/cgi-bin/qm/qr?k=0dNnSMqdNxs0nIl5YlfdbUA8wVyvcrVS&jump_from=webapi&authKey=s0K1jkH7fPDr/XEKuqINPMAcv+nsN7YfFpbrD4DkGttv/c/zQgCQe+okGG/SWh2T",
+    "authr": "dfgg工作室",
+    "master": "peg195",
+    "version": "Java1.12.2",
+    "serverIp": {
+      "ip": "play.dfggmc.eu.org",
+      "port": 25565
+    },
+    "description": "全员OP服务器",
+    "serverState": true
+  },
+  "4": {
+    "tag": "群组",
+    "name": "Cuberite Server Velocity服务器",
+    "link": "https://qm.qq.com/cgi-bin/qm/qr?k=rpLFIJEXXiPgDtQS2-5tDhxeHG7rt5Qe&jump_from=webapi&authKey=n3Y4RE9rH9B8NBcbaqdOdMcmxJ57R8HB5vyIiKnxd9K4Wst0imMdxItf9EU91SLr",
+    "authr": "dfgg工作室",
+    "master": "peg195",
+    "version": "Java1.9.x-1.20.x",
+    "serverIp": {
+      "ip": "play.dfggmc.eu.org",
+      "port": 25565
+    },
+    "description": "串联多个服务器并一站式解决Cuberite跨版本",
+    "serverState": true
+  }
 }
