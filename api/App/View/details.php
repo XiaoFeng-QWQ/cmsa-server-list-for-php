@@ -1,4 +1,6 @@
 <?php
+// 详情页
+
 if (!defined('FRAMEWORK_CORE')) {
     http_response_code('404');
 }
