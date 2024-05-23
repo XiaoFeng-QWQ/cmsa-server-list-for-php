@@ -12,6 +12,8 @@ if (version_compare(phpversion(), '5.4', '<')) {
 require __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/Core/Define.php';
 
+error_reporting(FRAMEWORK_DEBUG);
+
 use Framework\Mian;
 
 $App = new Mian;

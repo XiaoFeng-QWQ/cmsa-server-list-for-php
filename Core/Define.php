@@ -9,7 +9,7 @@ define('FRAMEWORK_CORE', true);
  * 
  * @var int
  */
-define('FRAMEWORK_DEBUG', -1);
+define('FRAMEWORK_DEBUG', 0);
 
 /**
  * 当前程序根目录
