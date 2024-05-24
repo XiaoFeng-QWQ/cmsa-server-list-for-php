@@ -2,10 +2,8 @@
 if (!defined('FRAMEWORK_CORE')) {
     http_response_code('404');
 }
-
 require_once FRAMEWORK_APP_PATH . '/View/common/head.php'
 ?>
-
 <div id="listLoading">
     <div class="ui three column stackable grid">
         <div class="column">
@@ -53,7 +51,6 @@ require_once FRAMEWORK_APP_PATH . '/View/common/head.php'
     </div>
 </div>
 <section id="serverList" class="ui centered link cards"></section>
-
 <?php
 require_once FRAMEWORK_APP_PATH . '/View/common/footer.php'
 ?>

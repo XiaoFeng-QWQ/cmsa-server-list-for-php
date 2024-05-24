@@ -7,7 +7,7 @@ if (!defined('FRAMEWORK_CORE')) {
 
 require_once FRAMEWORK_APP_PATH . '/View/common/head.php'
 ?>
-
+<link rel="stylesheet" href="/public/css/markdown-theme-sspai.css">
 <div id="detailsContent">
     <div class="loading">
         <div class="ui segment">

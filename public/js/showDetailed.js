@@ -26,6 +26,7 @@ function showDetailed() {
                                     <span class="ui horizontal bulleted list">
                                         <span class="item">${item.authr}</span>
                                         <span class="item">@${item.master}</span>
+                                        <span class="item server-state">获取状态中……</span>
                                         <span class="item">Cuberite Minecraft服务器联盟</span>
                                     </span>
                                 </span>
@@ -34,9 +35,6 @@ function showDetailed() {
                         <nav class="ui horizontal cuberite-expanded-plugin-metadata list">
                             <div class="item">
                                 <span class="content">${item.description}</span>
-                            </div>
-                            <div class="item">
-                                <span class="content">${item.version}</span>
                             </div>
                         </nav>
                     </div>
@@ -49,6 +47,9 @@ function showDetailed() {
                     </aside>
                 </header>
             </article>
+            <!-- 服务器信息 -->
+            <article class="ui cuberite-expanded-plugin raised padded segment server-state-content"></article>
+            <!-- 服务器描述 -->
             <article id="details" class="ui cuberite-expanded-plugin raised padded  segment" style="overflow-x: auto">
                 <div class="ui active inline loader"></div>
             </article>
@@ -63,9 +64,45 @@ function showDetailed() {
                 $('#details').html(marked.parse(markdownText));
               },
               error: function () {
-                $('#details').html("无法获取 Markdown 文件。");
+                $('#details').html("错误：无法获取服务器介绍文件。");
               }
             });
+            const serverStateContent = $('#detailsContent .server-state-content');
+            const serverState = $('#detailsContent .server-state');
+            // 获取服务器状态
+            if (item.serverState) {
+              $.ajax({
+                type: "GET",
+                url: `https://api.minecraft-server-status.dfggmc.top/`,
+                data: `ip=${item.serverIp.ip}&port=${item.serverIp.port}`,
+                dataType: "JSON",
+                success: function (res) {
+                  if (res.code === 200) {
+                    const { motd, players, version } = res.data;
+                    const serverStateInfoListHtml = `
+                    <span class="sub header server-state-info-list">
+                      ${motd}
+                      <span class="item">当前人数: ${players.online}</span>
+                      <span class="item">最大人数: ${players.max}</span>
+                      <span class="item">服务器版本: ${version}</span>
+                    </span>`;
+
+                    serverStateContent.html(serverStateInfoListHtml);
+                    serverState.html('服务器在线');
+                  } else {
+                    serverState.html('服务器离线');
+                    serverStateContent.html('服务器离线');
+                  }
+                },
+                error: function () {
+                  serverState.html('服务器离线');
+                  serverStateContent.html('服务器离线');
+                }
+              });
+            } else {
+              serverStateContent.remove();
+              serverState.remove();
+            }
 
             serverFound = true;
             return false; // 结束循环

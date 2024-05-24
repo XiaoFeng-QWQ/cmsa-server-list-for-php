@@ -53,7 +53,9 @@ if (!defined('FRAMEWORK_CORE')) {
                 NProgress.start();
             } else if (document.readyState === 'complete') {
                 NProgress.done();
+                // 显示服务器列表
                 showList();
+                // 显示服务器详情信息
                 showDetailed();
             }
         });
@@ -68,7 +70,7 @@ if (!defined('FRAMEWORK_CORE')) {
                 <p>Cuberite Minecraft服务器联盟-服务器列表</p>
             </a>
             <a class="header item" mdui-dialog="{target: '#music-player-settings'}">
-                <p>打开音乐播放器设置</p>
+                <p>音乐播放器设置</p>
             </a>
         </div>
     </nav>

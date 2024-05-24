@@ -21,8 +21,8 @@
     "master": "CoH2",
     "version": "Java1.7.x-1.20.6",
     "serverIp": {
-      "ip": "k.rainplay.cn",
-      "port": 59367
+      "ip": "rack2.rainplay.cn",
+      "port": 21768
     },
     "description": "主要玩法: 生存，养老，种田 官网正在重构中",
     "serverState": true
@@ -34,12 +34,8 @@
     "authr": "dfgg工作室",
     "master": "peg195",
     "version": "Java1.12.2",
-    "serverIp": {
-      "ip": "play.dfggmc.eu.org",
-      "port": 25565
-    },
     "description": "全员OP服务器",
-    "serverState": true
+    "serverState": false
   },
   "4": {
     "tag": "群组",
@@ -49,8 +45,8 @@
     "master": "peg195",
     "version": "Java1.9.x-1.20.x",
     "serverIp": {
-      "ip": "play.dfggmc.eu.org",
-      "port": 25565
+      "ip": "csv.cuberite-wiki.eu.org",
+      "port": 58023
     },
     "description": "串联多个服务器并一站式解决Cuberite跨版本",
     "serverState": true

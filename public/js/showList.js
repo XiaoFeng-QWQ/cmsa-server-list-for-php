@@ -3,6 +3,8 @@
  */
 function showList() {
   if ($('#serverList').length > 0) {
+    // 写入元素之前先把里面的内容清空避免出现意外情况
+    $('#serverList').html('');
     $.ajax({
       url: "/public/data/json/list.json",
       dataType: "json",

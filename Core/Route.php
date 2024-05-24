@@ -28,6 +28,11 @@ class Route
         $this->route_rules = $this->app_config->route_rules;
     }
 
+    /**
+     * 路由处理
+     *
+     * @return void
+     */
     public function processRoutes()
     {
         if (empty($this->currentUri)) {
@@ -50,6 +55,12 @@ class Route
         }
     }
 
+    /**
+     * 路由过滤
+     *
+     * @param string $uri
+     * @return array|null
+     */
     private function findHandler(string $uri): ?array
     {
         $uriWithoutQuery = strtok($uri, '?');
